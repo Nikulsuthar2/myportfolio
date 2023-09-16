@@ -31,6 +31,7 @@ I'm a Web developer...
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nikulsuthar/)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/nikcodeorg)
 [![X](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/NikulSuthar27)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ce0d6f8-1b4f-43c4-85fa-3e35d4d2b558/deploy-status)](https://app.netlify.com/sites/nikulsuthar/deploys)
 
 ## Tech Stack
 
