@@ -15,7 +15,7 @@ export const Section2 = () => {
     <div id='Section-Skills' className='min-h-screen pt-[60px] px-8 md:px-32 bg-slate-50'>
         <label className='font-bold text-black' style={{fontSize: '30px'}}>My Skills</label>
         <div className='mt-8 md:flex md:justify-between md:gap-10'>
-          <div className='md:w-[35%]'>
+          <div className='md:w-[40%]'>
             <label>Languages:</label>
             <div className='py-4 flex gap-4 flex-wrap'>
               <SkillCard skillimg={cpp}skillname={"C"}/>
@@ -28,7 +28,7 @@ export const Section2 = () => {
               <SkillCard skillimg={html} skillname={"PHP"}/>
             </div>
           </div>
-          <div className='md:w-[70%]'>
+          <div className='md:w-[65%]'>
             <div>
               <label>Frameworks or Tools: </label>
               <div className='py-4 flex gap-4 flex-wrap'>
