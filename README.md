@@ -33,6 +33,8 @@ I'm a Web developer...
 [![X](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/NikulSuthar27)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3ce0d6f8-1b4f-43c4-85fa-3e35d4d2b558/deploy-status)](https://app.netlify.com/sites/nikulsuthar/deploys)
 
+#Website Live
+[Nikul Suthar portfolio](https://nikulsuthar.netlify.com)
 ## Tech Stack
 
 **Client:** Vite + React
