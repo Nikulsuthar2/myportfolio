@@ -18,7 +18,6 @@ export const Section2 = () => {
           <div className='md:w-[40%]'>
             <label>Languages:</label>
             <div className='py-4 flex gap-4 flex-wrap'>
-              <SkillCard skillimg={cpp}skillname={"C"}/>
               <SkillCard skillimg={cpp} skillname={"C++"}/>
               <SkillCard skillimg={java} skillname={"Java"}/>
               <SkillCard skillimg={python} skillname={"Python"}/>
@@ -32,12 +31,11 @@ export const Section2 = () => {
             <div>
               <label>Frameworks or Tools: </label>
               <div className='py-4 flex gap-4 flex-wrap'>
-                <SkillCard skillimg={cpp} skillname={"Node JS"}/>
                 <SkillCard skillimg={reactlogo} skillname={"React"}/>
                 <SkillCard skillimg={tailwind} skillname={"Tailwind"}/>
                 <SkillCard skillimg={flutter} skillname={"Flutter"}/>
                 <SkillCard skillimg={flutter} skillname={"ASP.NET"}/>
-                <SkillCard skillimg={flutter} skillname={"GITHUB"}/>
+                <SkillCard skillimg={flutter} skillname={"GIT/GITHUB"}/>
               </div>
             </div>
             <div>

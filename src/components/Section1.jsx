@@ -20,7 +20,7 @@ export const Section1 = () => {
                 </button>
                 
             </div>
-            <div className='flex gap-4 md:gap-8 mt-4 bg-white/30 w-fit p-3 rounded-xl backdrop-blur'>
+            <div className='flex flex-wrap justify-center gap-4 md:gap-8 mt-4 bg-white/30 w-fit p-3 rounded-xl backdrop-blur'>
                 <Link to={"https://leetcode.com/nikulsuthar/"} target='_blank'><FaCode title='Leetcode'size={30}/></Link>
                 <Link to={"https://www.linkedin.com/in/nikulsuthar"} target='_blank'><FaLinkedin title='nikulsuthar'size={30}/></Link> 
                 <Link to={"https://github.com/Nikulsuthar2"} target='_blank'><FaGithub title='nikulsuthar2'size={30}/></Link> 

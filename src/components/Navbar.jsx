@@ -6,6 +6,7 @@ import { FaBars } from 'react-icons/fa'
 export const Navbar = () => {
   const [menuOn, setMenuOn] = useState(true);
 
+  
   const onMenuClick = () =>{
     setMenuOn(!menuOn);
   }
