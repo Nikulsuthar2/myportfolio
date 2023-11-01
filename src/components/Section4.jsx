@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Section4 = () => {
   return (
-    <div id='Section-Resume' className='bg-gray-900 md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
+    <div id='Section-Aboutme' className='bg-gray-900 md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
         <div className='rounded-xl bg-black md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
             <label className='text-white font-bold text-[40px]'>About Me</label>
             <div className='flex flex-col md:gap-[10px] gap-[5px]'>

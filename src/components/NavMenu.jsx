@@ -15,7 +15,7 @@ export const NavMenu = () => {
         <a href='#Section-Projects' title='Projects' className='md:border border-[#cbcbcb] md:p-[10px] p-[8px] rounded-xl hover:bg-gray-900'>
           <FaFolderOpen color='white'  size={20}/>
         </a>
-        <a href='#Section-Resume' title='About Me' className='md:border border-[#cbcbcb] md:p-[10px] p-[8px] rounded-xl hover:bg-gray-900'>
+        <a href='#Section-Aboutme' title='About Me' className='md:border border-[#cbcbcb] md:p-[10px] p-[8px] rounded-xl hover:bg-gray-900'>
           <FaUser color='white'  size={20}/>
         </a>
         
