@@ -6,9 +6,9 @@ export const SkillCard = ({
     icon,
 }) => {
   return (
-    <div className='flex md:p-[10px] p-[5px] items-center md:rounded-2xl rounded-full bg-white md:gap-[10px] gap-[5px]'>
-        {skillimg == null ? icon : <img src={skillimg} className='md:h-8 h-4 object-cover'/>}
-        <label className='font-bold text-sm md:text-base'>{skillname}</label>
+    <div className='flex p-[10px] items-center md:rounded-2xl rounded-full bg-white gap-[10px]'>
+        {skillimg == null ? icon : <img src={skillimg} className='md:h-8 h-8 object-cover'/>}
+        <label className='font-bold text-[18px] md:text-base'>{skillname}</label>
     </div>
   )
 }

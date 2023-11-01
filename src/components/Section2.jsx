@@ -19,10 +19,10 @@ export const Section2 = () => {
   return (
     <div id="Section-Skills" className='bg-gray-900 md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
       <div className='rounded-xl bg-[#133A30] md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
-        <label className='text-white font-bold md:text-[40px]'>My Skills</label>
+        <label className='text-white font-bold md:text-[40px] text-[40px]'>My Skills</label>
         <div className='flex flex-col md:gap-[10px] gap-[5px]'>
-          <label className='text-white font-bold md:text-[20px]'>Languages:</label>
-          <div className='flex flex-wrap md:gap-[10px] gap-[5px]'>
+          <label className='text-white font-bold md:text-[20px] text-[25px]'>Languages:</label>
+          <div className='flex flex-wrap gap-[10px]'>
             <SkillCard skillimg={cpp} skillname={"C++"}/>
             <SkillCard skillimg={java} skillname={"Java"}/>
             <SkillCard skillimg={python} skillname={"Python"}/>
@@ -32,9 +32,9 @@ export const Section2 = () => {
             <SkillCard skillimg={php} skillname={"PHP"}/>
           </div>
         </div>
-        <div className='flex flex-col md:gap-[10px] gap-[5px]'>
-          <label className='text-white font-bold md:text-[20px]'>Frameworks & Tools:</label>
-          <div className='flex flex-wrap md:gap-[10px] gap-[5px]'>
+        <div className='flex flex-col gap-[10px]'>
+          <label className='text-white font-bold md:text-[20px] text-[25px]'>Frameworks & Tools:</label>
+          <div className='flex flex-wrap gap-[10px]'>
             <SkillCard skillimg={reactlogo} skillname={"React"}/>
             <SkillCard skillimg={tailwind} skillname={"Tailwind"}/>
             <SkillCard skillimg={flutter} skillname={"Flutter"}/>
@@ -42,9 +42,9 @@ export const Section2 = () => {
             <SkillCard skillimg={git} skillname={"GIT/GITHUB"}/>
           </div>
         </div>
-        <div className='flex flex-col md:gap-[10px] gap-[5px]'>
-          <label className='text-white font-bold md:text-[20px]'>Database:</label>
-          <div className='flex flex-wrap md:gap-[10px] gap-[5px]'>
+        <div className='flex flex-col gap-[10px]'>
+          <label className='text-white font-bold md:text-[20px] text-[25px]'>Database:</label>
+          <div className='flex flex-wrap gap-[10px]'>
             <SkillCard skillimg={mysql} skillname={"MySQL"}/>
             <SkillCard skillimg={mongodb} skillname={"MongoDB"}/>
           </div>

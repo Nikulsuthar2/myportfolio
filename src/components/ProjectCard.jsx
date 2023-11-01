@@ -10,10 +10,10 @@ export const ProjectCard = ({
 }) => {
   return (
     <Link to={link}>
-    <div className='md:h-full rounded-lg bg-white hover:bg-slate-200 flex flex-col mg:gap-[10px] gap-[5px] md:w-[300px] md:p-[10px] p-[5px] transition-all justify-between'>
-      <img src={image} className='rounded-md md-h-[250px] w-[100%]' />
-      <label className='mt-2 font-bold md:text-[22px]'>{title}</label>
-      <p className='line-clamp-3 md:text-sm text-[12px]'>{desc}</p>
+    <div className='md:h-full rounded-xl bg-white hover:bg-slate-200 flex flex-col mg:gap-[10px] gap-[5px] md:w-[300px] md:p-[10px] p-[10px] transition-all justify-between'>
+      <img src={image} className='rounded-lg  w-[100%]' />
+      <label className='mt-2 font-bold md:text-[22px] text-[22px]'>{title}</label>
+      <p className='line-clamp-3 md:text-sm text-[15px]'>{desc}</p>
     </div>
     </Link>
     /*<div className={swap ? 'bg-white p-5 m-2 shadow-md rounded-lg flex flex-col justify-around items-center gap-5 md:flex-row-reverse' : 'bg-white p-5 m-2 shadow-md rounded-lg flex justify-around items-center flex-col md:flex-row gap-5'}>

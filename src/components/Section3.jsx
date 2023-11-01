@@ -7,7 +7,7 @@ export const Section3 = () => {
   return (
     <div id='Section-Projects' className='bg-gray-900 md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
       <div className='rounded-xl bg-[#131313] md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
-        <label className='text-white font-bold md:text-[40px]'>My Projects</label>
+        <label className='text-white font-bold md:text-[40px] text-[40px]'>My Projects</label>
         <div className='flex flex-col md:flex-row md:gap-[20px] gap-[10px] items-stretch'>
             <ProjectCard 
                 title={"Online Chatting System"}

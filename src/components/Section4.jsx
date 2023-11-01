@@ -4,9 +4,9 @@ export const Section4 = () => {
   return (
     <div id='Section-Resume' className='bg-gray-900 md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
         <div className='rounded-xl bg-black md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
-            <label className='text-white font-bold md:text-[40px]'>About Me</label>
+            <label className='text-white font-bold text-[40px]'>About Me</label>
             <div className='flex flex-col md:gap-[10px] gap-[5px]'>
-                <label className='text-white font-bold md:text-[20px]'>EDUCATION:</label>
+                <label className='text-white font-bold text-[20px]'>EDUCATION:</label>
                 <div className='flex md:flex-row flex-col md:gap-[20px] gap-[10px]'>
                     <div className='flex flex-col justify-between md:w-[300px] w-full bg-white md:p-[20px] p-[10px] rounded-lg'>
                         <label className='font-bold text-lg'>JECRC UNIVERSITY</label>
