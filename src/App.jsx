@@ -18,7 +18,7 @@ function App() {
         <Route path='' element={
           <div className='flex md:flex-row flex-col-reverse overflow-hidden h-screen'>
             <Navbar />
-            <div className='w-[100%]'>
+            <div className='w-[100%] '>
               <Section1/><Section2/><Section3/><Section4/><Section5/>
             </div>
           </div>
