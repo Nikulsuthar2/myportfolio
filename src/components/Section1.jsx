@@ -1,38 +1,45 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaDownload, FaGithub, FaInstagram, FaTwitter, FaFacebook, FaCode, FaYoutube , FaLinkedin ,FaLinkedinIn} from 'react-icons/fa';
-import nikul from '../assets/nikul.png';
+import nikul from '../assets/MyPhoto/profile2.jfif';
 import {Link} from 'react-router-dom';
+import BG from '../assets/Background/bg.png';
 
 export const Section1 = () => {
+    
+
   return (
-    <div className='relative z-0 flex justify-between items-center pt-[60px] px-8 md:px-32 min-h-screen bg-gradient-to-tl from-lightorange to-lightviolet overflow-hidden'>
-        <div className='p-4 md:mt-0 mt-64 md:p-0 md:h-full h-fit flex md:justify-center flex-col relative z-10 rounded-md backdrop-blur-sm md:backdrop-blur-none shadow-md md:shadow-none'>
-            <label className='font-bold text-white drop-shadow-md' style={{fontSize: '50px'}}>Hello, I'm Nikul Suthar</label>
-            <label className='font-bold text-yellow-300' style={{fontSize: '30px'}}>Software Developer</label>
-            <div className='flex gap-3 mt-5'>
-                <input 
-                    type='button' 
-                    value={"Contact Me"} 
-                    className='py-2 px-4 rounded-md bg-nikblack text-white hover:bg-black transition-all' 
-                />
-                <button className='flex items-center gap-2 py-2 px-4 rounded-md bg-white text-black font-semibold shadow-md hover:rounded transition-all'>
-                    Resume <FaDownload size={13}/>
-                </button>
+    <div id="home" className='h-screen bg-gray-900 md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
+        <img src={BG} className='h-[20%] md:h-[30%] w-full object-cover rounded-xl'/>
+        <div className='h-[60%] md:h-[45%] rounded-xl bg-[#004E54] md:p-[20px] p-[10px] flex md:flex-row flex-col justify-between items-center gap-[10px] md:gap-[20px]'>
+            <div className='flex md:gap-[30px] gap-[10px] h-full md:flex-row flex-col items-center'>
+                <img id="myprofile" src={nikul} className='md:h-full h-[100px] aspect-square object-cover rounded-full'/>
+                <div className='flex flex-col h-full w-full md:w-fit justify-between'>
+                    <div className='flex flex-col items-center md:items-start'>
+                        <label className='text-white font-bold md:text-[60px] text-[30px] leading-tight overflow-hidden'>Nikul Suthar</label>
+                        <label className='text-yellow-200 font-bold md:text-[30px] leading-tight overflow-hidden'>Software Developer</label>
+                    </div>
+                    <div className='flex md:gap-[10px] gap-[5px] flex-wrap justify-center md:justify-start'>
+                        <Link to={"https://leetcode.com/nikulsuthar/"} target='_blank' className='bg-white hover:bg-orange-600 hover:text-white rounded-xl md:p-3 p-1'><FaCode title='Leetcode'/></Link>
+                        <Link to={"https://www.linkedin.com/in/nikulsuthar"} target='_blank' className='bg-white hover:bg-blue-700 hover:text-white rounded-xl md:p-3 p-1'><FaLinkedin title='nikulsuthar'/></Link> 
+                        <Link to={"https://github.com/Nikulsuthar2"} target='_blank' className='bg-white hover:bg-black hover:text-white rounded-xl md:p-3 p-1'><FaGithub title='nikulsuthar2'/></Link> 
+                        <Link to={"https://instagram.com/nikcodeorg"} target='_blank' className='bg-white hover:bg-pink-500 hover:text-white rounded-xl md:p-3 p-1'><FaInstagram title='nikcodeorg'/></Link> 
+                        <Link to={"https://youtube.com/@Nikcode"} target='_blank' className='bg-white hover:bg-red-600 hover:text-white rounded-xl md:p-3 p-1'><FaYoutube title='Nikcode'/></Link>
+                        <Link to={"https://x.com/NikulSuthar27"} target='_blank' className='bg-white hover:bg-black hover:text-white rounded-xl md:p-3 p-1'><FaTwitter title='NikulSuthar27'/></Link>  
+                        <Link to={"https://www.facebook.com/nik.suthar.1238"} target='_blank' className='bg-white hover:bg-blue-500 hover:text-white rounded-xl md:p-3 p-1'><FaFacebook title='Nikul Suthar'/></Link>
                 
+                    </div>
+                </div>
             </div>
-            <div className='flex flex-wrap justify-center gap-4 md:gap-8 mt-4 bg-white/30 w-fit p-3 rounded-xl backdrop-blur'>
-                <Link to={"https://leetcode.com/nikulsuthar/"} target='_blank'><FaCode title='Leetcode'size={30}/></Link>
-                <Link to={"https://www.linkedin.com/in/nikulsuthar"} target='_blank'><FaLinkedin title='nikulsuthar'size={30}/></Link> 
-                <Link to={"https://github.com/Nikulsuthar2"} target='_blank'><FaGithub title='nikulsuthar2'size={30}/></Link> 
-                <Link to={"https://instagram.com/nikcodeorg"} target='_blank'><FaInstagram title='nikcodeorg'size={30}/></Link> 
-                <Link to={"https://youtube.com/@Nikcode"} target='_blank'><FaYoutube title='Nikcode'size={30}/></Link>
-                <Link to={"https://x.com/NikulSuthar27"} target='_blank'><FaTwitter title='NikulSuthar27'size={30}/></Link>  
-                <Link to={"https://www.facebook.com/nik.suthar.1238"} target='_blank'><FaFacebook title='Nikul Suthar'size={30}/></Link>
-             
-            </div>
+            <a href="#Section-Connect" className='bg-white hover:bg-gray-300 text-sm md:text-base rounded-lg md:px-6 md:py-3 py-1 w-full md:w-fit font-bold'>connect</a>
         </div>
-        <img src={nikul} alt='portfolio photo' className='absolute md:h-screen z-0 top-10 right-4 md:bottom-0 md:right-0'/>
-        
+        <div className='h-[20%] md:h-[25%] rounded-xl bg-[#3B2F34] p-[20px] flex justify-center items-center overflow-visible'>
+            <p className='text-white text-sm md:text-[20px] font-light text-center md:text-left overflow-visible'>
+                hi there, I am Nikul Suthar<br/>
+                I am a Web Developer 😎💻<br/>
+                Currently I am pursuing my MCA from JECRC University
+            </p>
+        </div>
+        <div className='md:h-0 h-[50px]'></div>
     </div>
   )
 }

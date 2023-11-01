@@ -1,24 +1,18 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
 import { NavMenu } from './NavMenu'
-import { FaBars } from 'react-icons/fa'
+import { FaFileAlt } from 'react-icons/fa'
+import nikcode from '../assets/nikcodelogo.png';
 
 export const Navbar = () => {
-  const [menuOn, setMenuOn] = useState(true);
-
-  
-  const onMenuClick = () =>{
-    setMenuOn(!menuOn);
-  }
   
   return (
-    <nav className='fixed z-50 w-full flex flex-col md:flex-row md:justify-between md:items-center px-8 sm:px-4 md:px-32  py-2 bg-white/20 backdrop-blur-md transition-all border-b border-gray-400'>
-        <div className='flex items-center justify-between'>
-          <label className='font-bold text-[30px] md:text-lg'>Nikul Suthar.</label>
-          <FaBars id='menu-btn' className='md:hidden cursor-pointer' onClick={onMenuClick}/>
-        </div>
-        {menuOn ? <NavMenu/> : ""}
-        
+    <nav className='flex md:flex-col md:justify-between justify-center items-center bg-gray-900 md:w-[80px] w-full md:h-screen h-[50px] absolute md:relative z-50 p-[15px] overflow-hidden'>
+        <img src={nikcode} className='rounded-xl md:w-full hidden md:block'/>
+        <NavMenu/>
+        <a href='#Section-Resume' className='hidden md:block bg-gray-900 border border-[#cbcbcb] p-[10px] rounded-xl hover:bg-gray-900'>
+          <FaFileAlt color='white'  size={20}/>
+        </a>
     </nav>
   )
 }
