@@ -3,11 +3,10 @@ import { FaGithub, FaInstagram, FaTwitter, FaFacebook, FaCode, FaYoutube , FaLin
 import {Link} from 'react-router-dom';
 export const Section5 = () => {
   return (
-    <div id='Section-Connect' className=' bg-gray-900 md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px] justify-between'>
+    <div id='Section-Connect' className=' bg-gray-900 md:p-[20px] p-[10px] flex flex-col md:gap-[30px] gap-[20px] justify-between'>
         <div className='rounded-xl bg-[#2b5351] md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
             <label className='text-white font-bold text-[40px]'>Connect</label>
             <div className='text-white flex flex-col md:gap-[10px] gap-[5px]'>
-                
                 <label className='md:text-base text-[25px]'>Email :- <strong>nikulsuthar973@gmil.com</strong></label>
                 <div className='mt-2 md:grid md:grid-cols-3 flex flex-col text-black md:gap-[20px] gap-[10px]'>
                     <Link to={"https://leetcode.com/nikulsuthar/"} target='_blank' 
@@ -44,7 +43,6 @@ export const Section5 = () => {
         <footer className='flex items-center md:gap-2 gap-1 text-white justify-center text-[20px] md:text-base'>
             &copy; Made with <FaCode/> by Nikul Suthar. 2023
         </footer>
-        <div className='md:h-0 h-[70px]'></div>
     </div>
   )
 }

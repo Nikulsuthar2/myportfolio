@@ -18,6 +18,7 @@ import mongodb from '../assets/mongodb.png';
 export const Section2 = () => {
   return (
     <div id="Section-Skills" className='bg-gray-900 md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
+      <div className='md:h-0 h-[70px]'></div>
       <div className='rounded-xl bg-[#133A30] md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
         <label className='text-white font-bold md:text-[40px] text-[40px]'>My Skills</label>
         <div className='flex flex-col md:gap-[10px] gap-[5px]'>

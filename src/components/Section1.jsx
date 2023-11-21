@@ -10,6 +10,7 @@ export const Section1 = () => {
 
   return (
     <div id="home" className='h-screen bg-gray-900 md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
+        <div className='md:h-0 h-[70px]'></div>
         <div className='h-[20%] relative md:block'>
             <img src={nikcode} className='rounded-xl aspect-square absolute h-[60px] left-[20px] bottom-[20px] shadow-xl md:hidden'/>
             <img src={BG} className='h-full w-full object-cover rounded-xl'/>
@@ -43,7 +44,6 @@ export const Section1 = () => {
                 Currently I am pursuing my MCA from JECRC University
             </p>
         </div>
-        <div className='md:h-0 h-[70px]'></div>
     </div>
   )
 }
