@@ -7,7 +7,7 @@ export const Section5 = () => {
         <div className='rounded-xl bg-[#2b5351] md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
             <label className='text-white font-bold text-[40px]'>Connect</label>
             <div className='text-white flex flex-col md:gap-[10px] gap-[5px]'>
-                <label className='md:text-base text-[25px]'>Email :- <strong>nikulsuthar973@gmil.com</strong></label>
+                <label className='md:text-base text-[25px]'>Email :- <strong>nikulsuthar973@gmail.com</strong></label>
                 <div className='mt-2 md:grid md:grid-cols-3 flex flex-col text-black md:gap-[20px] gap-[10px]'>
                     <Link to={"https://leetcode.com/nikulsuthar/"} target='_blank' 
                     className='bg-white hover:bg-orange-600 hover:text-white text-[25px] rounded-xl md:p-3 p-2 px-[10px] md:px-[20px] flex items-center justify-between md:gap-[10px] font-bold'>
