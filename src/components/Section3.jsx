@@ -1,26 +1,45 @@
 import React from 'react'
 import { ProjectCard } from './ProjectCard'
-import chatp1 from '../assets/project/index.png';
-import moviep1 from '../assets/project/movieindex.png';
+import chatp1 from '../assets/ProjectThumbnail/chat2.png';
+import moviep1 from '../assets/ProjectThumbnail/moviestream.png';
+import nikcalc from '../assets/ProjectThumbnail/nikcalculator.png';
+import jblstore from '../assets/ProjectThumbnail/jblstore.png';
 
 export const Section3 = () => {
   return (
-    <div id='Section-Projects' className='bg-gray-900 md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
-      <div className='md:h-0 h-[70px]'></div>
-      <div className='rounded-xl bg-[#131313] md:p-[20px] p-[10px] flex flex-col md:gap-[20px] gap-[10px]'>
-        <label className='text-white font-bold md:text-[40px] text-[40px]'>My Projects</label>
-        <div className='flex flex-col md:flex-row md:gap-[20px] gap-[10px] items-stretch'>
+    <div id='Section-Projects' className='md:h-screen bg-[#0F0341] p-[10px] flex justify-center items-center'>
+      <div className='w-[90%] flex flex-col gap-[20px]'>
+        <label className='text-white text-center font-bold text-[40px]'>My Projects</label>
+        <div className='flex md:flex-row flex-col w-full justify-start gap-[20px] overflow-x-scroll'>
             <ProjectCard 
-                title={"Online Chatting System"}
-                image={chatp1}
-                desc={"Online Chatting System is realtime chatting website where we can create an account, search user for chatting, send messages, block user and edit profile. This website has two modules - 1. User, 2. Admin"}
-                link={"/chatproject"}
+                title={"Calculator"}
+                image={nikcalc}
+                desc={"A Simple calculator with some advance feature like factorial, square etc"}
+                // link={"/"}
+                islive={true}
+                liveUrl={"https://nikcalculator.netlify.app/"}
+                githubUrl={"https://github.com/Nikulsuthar2/Calculator"}
             />
             <ProjectCard 
-                title={"Online Movie Streaming & Subscription System"}
+                title={"JBL Store"}
+                image={jblstore}
+                desc={"An E-commerce website where we can sell JBL product, manage inventory, generate bill. This website has two modules - 1. User, 2. Admin"}
+                // link={"/chatproject"}
+                githubUrl={"https://github.com/Nikulsuthar2/JBLStore"}
+            />
+            <ProjectCard 
+                title={"Realtime Chatting System"}
+                image={chatp1}
+                desc={"Online Chatting System is realtime chatting website where we can create an account, search user for chatting, send messages, block user and edit profile. This website has two modules - 1. User, 2. Admin"}
+                // link={"/chatproject"}
+                githubUrl={"https://github.com/Nikulsuthar2/OnlineChat"}
+            />
+            <ProjectCard 
+                title={"Movie Streaming & Subscription System"}
                 image={moviep1}
                 desc={"Online Movie Streaming & Subscription System is a movie streaming website where you can create an account, buy a subscription, watch movie, add movie to watchlist. This website has two modules - 1. User, 2. Admin"}
-                link={"/movieproject"}
+                // link={"/movieproject"}
+                githubUrl={"https://github.com/Nikulsuthar2/MovieStreamer"}
             />
         </div>
       </div>

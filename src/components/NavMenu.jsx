@@ -5,20 +5,19 @@ import {FaHome, FaTools, FaFolderOpen, FaUser} from 'react-icons/fa';
 
 export const NavMenu = () => {
   return (
-    <div className='flex md:flex-col justify-evenly w-full items-center gap-2'>
-        <a href='#home' title='Home' className='border md:border-[#cbcbcb] md:p-[10px] p-[8px] rounded-xl hover:bg-gray-900'>
-          <FaHome color='white' size={20}/>
+    <div className='flex justify-evenly items-center md:gap-[10px] gap-4 font-bold text-white'>
+        <a href='#home' title='Home' className='flex gap-[10px] items-center hover:bg-[#ffffff41] rounded-full md:py-[10px] md:px-[20px]'>
+          <FaHome color='white' className='text-[25px]'/> <label className='md:block hidden'>Home</label>
         </a>
-        <a href='#Section-Skills' title='Skills' className='border border-[#cbcbcb] md:p-[10px] p-[8px] rounded-xl hover:bg-gray-900'>
-          <FaTools color='white' size={20}/>
+        <a href='#Section-Skills' title='Skills' className='flex gap-[10px] items-center hover:bg-[#ffffff41] rounded-full md:py-[10px] md:px-[20px]'>
+          <FaTools color='white' className='text-[25px]'/> <label className='md:block hidden'>Skills</label>
         </a>
-        <a href='#Section-Projects' title='Projects' className='border border-[#cbcbcb] md:p-[10px] p-[8px] rounded-xl hover:bg-gray-900'>
-          <FaFolderOpen color='white'  size={20}/>
+        <a href='#Section-Projects' title='Projects' className='flex gap-[10px] items-center hover:bg-[#ffffff41] rounded-full md:py-[10px] md:px-[20px]'>
+          <FaFolderOpen color='white' className='text-[25px]'/> <label className='md:block hidden'>Projects</label>
         </a>
-        <a href='#Section-Aboutme' title='About Me' className='border border-[#cbcbcb] md:p-[10px] p-[8px] rounded-xl hover:bg-gray-900'>
-          <FaUser color='white'  size={20}/>
+        <a href='#Section-Aboutme' title='About Me' className='flex gap-[10px] items-center hover:bg-[#ffffff41] rounded-full md:py-[10px] md:px-[20px]'>
+          <FaUser color='white' className='text-[25px]'/> <label className='md:block hidden'>About Me</label>
         </a>
-        
     </div>
   )
 }
