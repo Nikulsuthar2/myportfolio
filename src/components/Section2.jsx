@@ -21,14 +21,14 @@ export const Section2 = () => {
               Languages:
             </label>
             <div className="flex flex-wrap gap-[10px] md:justify-between">
-              <SkillCard icon={<SiCplusplus size={70} />} skillname={"C++"} />
-              <SkillCard icon={<FaJava size={70} />} skillname={"Java"} />
-              <SkillCard icon={<SiPython size={70} />} skillname={"Python"} />
-              <SkillCard icon={<SiHtml5 size={70} />} skillname={"HTML"} />
-              <SkillCard icon={<SiCss3 size={70}/>} skillname={"CSS"} />
-              <SkillCard icon={<IoLogoJavascript size={70}/>} skillname={"JavaScript"}/>
-              <SkillCard icon={<SiPhp size={70}/>} skillname={"PHP"} />
-              <SkillCard icon={<SiCsharp size={70}/>} skillname={"CSharp"} />
+              <SkillCard icon={<SiCplusplus className="md:text-[60px] text-[40px]" />} skillname={"C++"} />
+              <SkillCard icon={<FaJava className="md:text-[60px] text-[40px]" />} skillname={"Java"} />
+              <SkillCard icon={<SiPython className="md:text-[60px] text-[40px]" />} skillname={"Python"} />
+              <SkillCard icon={<SiHtml5 className="md:text-[60px] text-[40px]" />} skillname={"HTML"} />
+              <SkillCard icon={<SiCss3 className="md:text-[60px] text-[40px]"/>} skillname={"CSS"} />
+              <SkillCard icon={<IoLogoJavascript className="md:text-[60px] text-[40px]"/>} skillname={"JavaScript"}/>
+              <SkillCard icon={<SiPhp className="md:text-[60px] text-[40px]"/>} skillname={"PHP"} />
+              <SkillCard icon={<SiCsharp className="md:text-[60px] text-[40px]"/>} skillname={"CSharp"} />
             </div>
           </div>
           <div className="flex gap-[20px] flex-col md:flex-row md:justify-between md:items-center">
@@ -37,11 +37,11 @@ export const Section2 = () => {
                 Frameworks/Libraries:
               </label>
               <div className="flex flex-wrap gap-[10px]">
-                <SkillCard icon={<SiReact size={70} />} skillname={"React"} />
-                <SkillCard icon={<SiTailwindcss size={70} />} skillname={"Tailwind"} />
-                <SkillCard icon={<SiNodedotjs size={70} />} skillname={"NodeJS"} />
-                <SkillCard icon={<SiExpress size={70} />} skillname={"ExpressJS"} />
-                <SkillCard icon={<SiFlutter size={70} />} skillname={"Flutter"} />
+                <SkillCard icon={<SiReact className="md:text-[60px] text-[40px]" />} skillname={"React"} />
+                <SkillCard icon={<SiTailwindcss className="md:text-[60px] text-[40px]"/>} skillname={"Tailwind"} />
+                <SkillCard icon={<SiNodedotjs className="md:text-[60px] text-[40px]" />} skillname={"NodeJS"} />
+                <SkillCard icon={<SiExpress className="md:text-[60px] text-[40px]" />} skillname={"ExpressJS"} />
+                <SkillCard icon={<SiFlutter className="md:text-[60px] text-[40px]" />} skillname={"Flutter"} />
               </div>
             </div>
             <div className="flex flex-col gap-[10px]">
@@ -49,8 +49,8 @@ export const Section2 = () => {
                 Database:
               </label>
               <div className="flex flex-wrap gap-[10px]">
-                <SkillCard icon={<GrMysql size={70}/>} skillname={"MySQL"} />
-                <SkillCard icon={<SiMongodb size={70}/>} skillname={"MongoDB"} />
+                <SkillCard icon={<GrMysql className="md:text-[60px] text-[40px]"/>} skillname={"MySQL"} />
+                <SkillCard icon={<SiMongodb className="md:text-[60px] text-[40px]"/>} skillname={"MongoDB"} />
               </div>
             </div>
             <div className="flex flex-col gap-[10px]">
@@ -58,8 +58,8 @@ export const Section2 = () => {
                 Tools:
               </label>
               <div className="flex flex-wrap gap-[10px]">
-                <SkillCard icon={<SiGit size={70} />} skillname={"GIT/GITHUB"}  />
-                <SkillCard icon={<SiVisualstudiocode size={70} />} skillname={"VS Code"}  />
+                <SkillCard icon={<SiGit className="md:text-[60px] text-[40px]" />} skillname={"Git"}  />
+                <SkillCard icon={<SiVisualstudiocode className="md:text-[60px] text-[40px]"/>} skillname={"VS Code"}  />
               </div>
             </div>
           </div>

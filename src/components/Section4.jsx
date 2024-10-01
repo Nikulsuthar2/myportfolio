@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import EducationCard from "./EducationCard";
 import jecrc from '../assets/Education/jecrc.jpg';
 import nvpas from '../assets/Education/nvpas.jpg';
+import {motion, useInView} from 'framer-motion';
 
 export const Section4 = () => {
+  const ref = useRef(null);
+    const isinview = useInView(ref);
   return (
     <div
+      ref={ref}
       id="Section-Aboutme"
       className="md:h-screen bg-[#0F0341] p-[10px] flex justify-center items-center"
     >
@@ -18,9 +22,9 @@ export const Section4 = () => {
             <label className="text-white font-bold text-[25px]">
               SUMMARY
             </label>
-            <div className="backdrop-blur-xl bg-[#9981ff52] text-white p-[20px] rounded-[20px] text-justify h-full">
+            <motion.div initial={{opacity:0,scale:0,}} animate={isinview ? {opacity:1,scale:1,}: {}} transition={{duration:1}} className="backdrop-blur-xl bg-[#9981ff52] text-white p-[20px] rounded-[20px] text-justify h-full">
             I have recently completed my Bachelor's degree in Computer Applications (BCA) and I am about to embark on a new chapter in my academic journey. I am going to start my Master's program in Computer Applications (MCA) and I am eager to expand my knowledge and skills. While I may not have professional experience at this stage, my educational background has equipped me with a solid foundation in computer applications, programming languages, and various IT concepts. I have actively engaged in coursework and projects that have honed my technical abilities and problem-solving skills.
-            </div>
+            </motion.div>
           </div>
           <div className="flex flex-col items-center gap-[10px] w-full">
             <label className="text-white font-bold text-[25px]">

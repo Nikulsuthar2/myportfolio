@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
 import { Navbar } from './components/Navbar'
 import { Section1 } from './components/Section1'
 import { Section2 } from './components/Section2'
 import { Section3 } from './components/Section3'
 import {Routes, Route} from 'react-router-dom';
-import { ViewChatProjectScreenshot } from './components/ViewChatProjectScreenshot'
-import { ViewMovieProjectScreenshot } from './components/ViewMovieProject'
 import { Section4 } from './components/Section4'
 import { Section5 } from './components/Section5'
 import './components/Scrollbar.css';
+import ProjectsShowCase from './components/ProjectsShowCase'
 
 
 function App() {
@@ -24,12 +21,8 @@ function App() {
           </div>
         }/>
         <Route 
-          path='/chatproject'
-          element={<ViewChatProjectScreenshot />}
-        />
-        <Route 
-          path='/movieproject'
-          element={<ViewMovieProjectScreenshot />}
+          path='/projects'
+          element={<ProjectsShowCase />}
         />
       </Routes>
   )

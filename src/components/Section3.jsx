@@ -12,6 +12,7 @@ export const Section3 = () => {
         <label className='text-white text-center font-bold text-[40px]'>My Projects</label>
         <div className='flex md:flex-row flex-col w-full justify-start gap-[20px] overflow-x-scroll'>
             <ProjectCard 
+                link={"/projects#nikcalculator"}
                 title={"Calculator"}
                 image={nikcalc}
                 desc={"A Simple calculator with some advance feature like factorial, square etc"}
@@ -21,6 +22,7 @@ export const Section3 = () => {
                 githubUrl={"https://github.com/Nikulsuthar2/Calculator"}
             />
             <ProjectCard 
+                link={"/projects#jblstore"}
                 title={"JBL Store"}
                 image={jblstore}
                 desc={"An E-commerce website where we can sell JBL product, manage inventory, generate bill. This website has two modules - 1. User, 2. Admin"}
@@ -28,6 +30,7 @@ export const Section3 = () => {
                 githubUrl={"https://github.com/Nikulsuthar2/JBLStore"}
             />
             <ProjectCard 
+                link={"/projects#chatingwebsite"}
                 title={"Realtime Chatting System"}
                 image={chatp1}
                 desc={"Online Chatting System is realtime chatting website where we can create an account, search user for chatting, send messages, block user and edit profile. This website has two modules - 1. User, 2. Admin"}
@@ -35,6 +38,7 @@ export const Section3 = () => {
                 githubUrl={"https://github.com/Nikulsuthar2/OnlineChat"}
             />
             <ProjectCard 
+                link={"/projects#moviestreamer"}
                 title={"Movie Streaming & Subscription System"}
                 image={moviep1}
                 desc={"Online Movie Streaming & Subscription System is a movie streaming website where you can create an account, buy a subscription, watch movie, add movie to watchlist. This website has two modules - 1. User, 2. Admin"}
