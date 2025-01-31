@@ -125,7 +125,8 @@ import ebookstore17 from '@/assets/Projects/EBookStore/img16.png'
 import ebookstore18 from '@/assets/Projects/EBookStore/img17.png'
 import ebookstore19 from '@/assets/Projects/EBookStore/img18.png'
 import ebookstore20 from '@/assets/Projects/EBookStore/img19.png'
-import ebookstore21 from '@/assets/Projects/EBookStore/img21.png'
+import ebookstore21 from '@/assets/Projects/EBookStore/img20.png'
+import ebookstore22 from '@/assets/Projects/EBookStore/img21.png'
 
 const navLinks = [
   { name: "Home", icon: <Home size={16} />, href: "#home" },
