@@ -41,7 +41,7 @@ const ProjectDetails = () => {
         <div className="max-w-8xl mt-2 mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-4">
           <div className="flex flex-col gap-4 ">
             <img
-              src={project.screenshots[0]}
+              src={project.image}
               alt={project.title}
               className="w-full aspect-video object-cover rounded-xl"
             />
