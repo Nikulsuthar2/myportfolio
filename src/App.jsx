@@ -1,31 +1,27 @@
-import { Navbar } from './components/Navbar'
-import { Section1 } from './components/Section1'
-import { Section2 } from './components/Section2'
-import { Section3 } from './components/Section3'
-import {Routes, Route} from 'react-router-dom';
-import { Section4 } from './components/Section4'
-import { Section5 } from './components/Section5'
-import './components/Scrollbar.css';
-import ProjectsShowCase from './components/ProjectsShowCase'
-
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
+import './assets/Scrollbar.css';
+import V2 from './V2/V2';
+import ProjectsShowCase from "./V2/components/ProjectsShowCase";
+import V3 from "./V3/V3";
+import ProjectDetails from "./V3/components/ProjectDetails";
 
 function App() {
-  return (
-      <Routes>
-        <Route path='' element={
-          <div className='flex md:flex-col flex-col overflow-hidden h-screen w-full relative'>
-            <Navbar />
-            <div className='w-[100%]'>
-              <Section1/><Section2/><Section3/><Section4/><Section5/>
-            </div>
-          </div>
-        }/>
-        <Route 
-          path='/projects'
-          element={<ProjectsShowCase />}
-        />
-      </Routes>
-  )
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <>
+        <Route path="/">
+          <Route index element={<V3 />}></Route>
+          <Route path="/projects/:id" element={<ProjectDetails />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
+        </Route>
+        <Route path="/v2">
+          <Route index element={<V2 />}></Route>
+          <Route path="/v2/projects" element={<ProjectsShowCase />} />
+        </Route>
+      </>
+    )
+  );
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
