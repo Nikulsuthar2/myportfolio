@@ -105,28 +105,28 @@ import chatbotp7 from '../assets/Projects/ChatbotPythonPHP/img6.png'
 import chatbotp8 from '../assets/Projects/ChatbotPythonPHP/img7.png'
 import chatbotp9 from '../assets/Projects/ChatbotPythonPHP/img8.png'
 
-import ebookstore1 from '../assets/Projects/EBookStoreMERN/thumb.png'
-import ebookstore2 from '../assets/Projects/EbookStoreMERN/img1.png'
-import ebookstore3 from '../assets/Projects/EbookStoreMERN/img2.png'
-import ebookstore4 from '../assets/Projects/EbookStoreMERN/img3.png'
-import ebookstore5 from '../assets/Projects/EbookStoreMERN/img4.png'
-import ebookstore6 from '../assets/Projects/EbookStoreMERN/img5.png'
-import ebookstore7 from '../assets/Projects/EbookStoreMERN/img6.png'
-import ebookstore8 from '../assets/Projects/EbookStoreMERN/img7.png'
-import ebookstore9 from '../assets/Projects/EbookStoreMERN/img8.png'
-import ebookstore10 from '../assets/Projects/EbookStoreMERN/img9.png'
-import ebookstore11 from '../assets/Projects/EbookStoreMERN/img10.png'
-import ebookstore12 from '../assets/Projects/EbookStoreMERN/img11.png'
-import ebookstore13 from '../assets/Projects/EbookStoreMERN/img12.png'
-import ebookstore14 from '../assets/Projects/EbookStoreMERN/img13.png'
-import ebookstore15 from '../assets/Projects/EbookStoreMERN/img14.png'
-import ebookstore16 from '../assets/Projects/EbookStoreMERN/img15.png'
-import ebookstore17 from '../assets/Projects/EbookStoreMERN/img16.png'
-import ebookstore18 from '../assets/Projects/EbookStoreMERN/img17.png'
-import ebookstore19 from '../assets/Projects/EbookStoreMERN/img18.png'
-import ebookstore20 from '../assets/Projects/EbookStoreMERN/img19.png'
-import ebookstore21 from '../assets/Projects/EbookStoreMERN/img20.png'
-import ebookstore22 from '../assets/Projects/EbookStoreMERN/img21.png'
+import ebookstore1 from '../assets/Projects/EBookStore/thumb.png'
+import ebookstore2 from '../assets/Projects/EbookStore/img1.png'
+import ebookstore3 from '../assets/Projects/EbookStore/img2.png'
+import ebookstore4 from '../assets/Projects/EbookStore/img3.png'
+import ebookstore5 from '../assets/Projects/EbookStore/img4.png'
+import ebookstore6 from '../assets/Projects/EbookStore/img5.png'
+import ebookstore7 from '../assets/Projects/EbookStore/img6.png'
+import ebookstore8 from '../assets/Projects/EbookStore/img7.png'
+import ebookstore9 from '../assets/Projects/EbookStore/img8.png'
+import ebookstore10 from '../assets/Projects/EbookStore/img9.png'
+import ebookstore11 from '../assets/Projects/EbookStore/img10.png'
+import ebookstore12 from '../assets/Projects/EbookStore/img11.png'
+import ebookstore13 from '../assets/Projects/EbookStore/img12.png'
+import ebookstore14 from '../assets/Projects/EbookStore/img13.png'
+import ebookstore15 from '../assets/Projects/EbookStore/img14.png'
+import ebookstore16 from '../assets/Projects/EbookStore/img15.png'
+import ebookstore17 from '../assets/Projects/EbookStore/img16.png'
+import ebookstore18 from '../assets/Projects/EbookStore/img17.png'
+import ebookstore19 from '../assets/Projects/EbookStore/img18.png'
+import ebookstore20 from '../assets/Projects/EbookStore/img19.png'
+import ebookstore21 from '../assets/Projects/EbookStore/img20.png'
+import ebookstore22 from '../assets/Projects/EbookStore/img21.png'
 
 const navLinks = [
   { name: "Home", icon: <Home size={16} />, href: "#home" },
@@ -391,7 +391,7 @@ const projects = [
   },
   {
     id: 7,
-    title: "EBook Store MERN",
+    title: "EBook Store ",
     description: "An E-Commerce Website for selling & reading pdf books online.",
     image: ebookstore4,
     tech: ["ReactJS", "TailwindCSS", "Ant Design", "NodeJS", "Express", "MongoDB"],
