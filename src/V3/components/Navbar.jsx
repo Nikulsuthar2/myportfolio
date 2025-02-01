@@ -1,7 +1,7 @@
 import { useState } from "react";
 import nik from "../../assets/nikcodelogo.png";
 import { navLinks } from "../data";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { Menu, X, Sun, Moon, Download } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -105,6 +105,10 @@ const Navbar = () => {
                   <span>{link.name}</span>
                 </a>
               ))}
+              <a key="resume" href="./resume_public.pdf" target="_blank" onClick={() => setIsMenuOpen(false)} className="flex items-center space-x-2 px-3 py-2 text-gray-300 hover:text-white transition-colors">
+                <Download size={16} />
+                <span>View Resume</span>
+              </a>
             </div>
           </div>
         </div>
