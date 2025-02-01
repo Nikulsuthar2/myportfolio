@@ -429,7 +429,7 @@ const projects = [
       "Detailed Purchase History & Report",
     ],
     demoUrl: "",
-    githubUrl: "https://github.com/Nikulsuthar2/Calculator",
+    githubUrl: "https://github.com/Nikulsuthar2/EBookStoreMern",
     youtubeUrl: "",
   }
 ];

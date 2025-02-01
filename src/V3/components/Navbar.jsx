@@ -76,7 +76,7 @@ const Navbar = () => {
                         <a href="#contact" onClick={() => setIsProfileOpen(false)} className="block px-4 py-2 text-sm text-gray-300  hover:bg-gray-700/50  rounded-lg">
                           Contact
                         </a>
-                        <a href="" onClick={() => setIsProfileOpen(false)} className="block px-4 py-2 text-sm text-gray-300  hover:bg-gray-700/50  rounded-lg">
+                        <a href="./resume_public.pdf" target="_blank" onClick={() => setIsProfileOpen(false)} className="block px-4 py-2 text-sm text-gray-300  hover:bg-gray-700/50  rounded-lg">
                           View Resume
                         </a>
                       </div>
