@@ -10,7 +10,7 @@ import { SiCplusplus, SiCss3, SiExpress, SiFlutter, SiGit, SiHtml5, SiJavascript
 
 import jecrc from "@/assets/Education/jecrc.jpg";
 import nvpas from "@/assets/Education/nvpas.jpg";
-import accenture from "@/assets/Company/accentureLogo.jpg"
+import accenture from "@/assets/Company/AccentureLogo.jpg"
 
 import nikcalc1 from '@/assets/Projects/Calculator/thumb.png';
 import nikcalc2 from '@/assets/Projects/Calculator/img1.png';
@@ -128,6 +128,21 @@ import ebookstore19 from '@/assets/Projects/EBookStore/img18.png'
 import ebookstore20 from '@/assets/Projects/EBookStore/img19.png'
 import ebookstore21 from '@/assets/Projects/EBookStore/img20.png'
 import ebookstore22 from '@/assets/Projects/EBookStore/img21.png'
+
+import accentureInternshipCertificate from "@/assets/Certificates/accenture_internship.png"
+import freecodecampCSharp from "@/assets/Certificates/freecodecampCSharp.png"
+import ibmHTML from "@/assets/Certificates/ibmHTML.jpg"
+import ibmJavascript from "@/assets/Certificates/ibmJavasrcipt.jpg"
+import ibmNodejs from "@/assets/Certificates/ibmNodejs.jpg"
+import ibmDevOpsFundamentals from "@/assets/Certificates/ibmDevOpsFundamentals.jpg"
+import courseraUX from "@/assets/Certificates/courseraUX.jpg"
+import courseraTechSupport from "@/assets/Certificates/courseraTechSupport.jpg"
+import courseraVersionControl from "@/assets/Certificates/courseraVersionControl.jpg"
+import courseraFrontend from "@/assets/Certificates/courseraFrontend.jpg"
+import courseraJavascript from "@/assets/Certificates/courseraJavascript.jpg"
+import courseraAI from "@/assets/Certificates/courseraAI.jpg"
+import courseraJDBC from "@/assets/Certificates/courseraJDBC.jpg"
+import courseraDataForML from "@/assets/Certificates/courseraDataForML.jpg"
 
 const navLinks = [
   { name: "Home", icon: <Home size={16} />, href: "#home" },
@@ -519,21 +534,6 @@ const experience = [
     color: "purple",
   },
 ]
-
-import accentureInternshipCertificate from "@/assets/Certificates/accenture_internship.png"
-import freecodecampCSharp from "@/assets/Certificates/freecodecampCSharp.png"
-import ibmHTML from "@/assets/Certificates/ibmHTML.jpg"
-import ibmJavascript from "@/assets/Certificates/ibmJavasrcipt.jpg"
-import ibmNodejs from "@/assets/Certificates/ibmNodejs.jpg"
-import ibmDevOpsFundamentals from "@/assets/Certificates/ibmDevOpsFundamentals.jpg"
-import courseraUX from "@/assets/Certificates/courseraUX.jpg"
-import courseraTechSupport from "@/assets/Certificates/courseraTechSupport.jpg"
-import courseraVersionControl from "@/assets/Certificates/courseraVersionControl.jpg"
-import courseraFrontend from "@/assets/Certificates/courseraFrontend.jpg"
-import courseraJavascript from "@/assets/Certificates/courseraJavascript.jpg"
-import courseraAI from "@/assets/Certificates/courseraAI.jpg"
-import courseraJDBC from "@/assets/Certificates/courseraJDBC.jpg"
-import courseraDataForML from "@/assets/Certificates/courseraDataForML.jpg"
 
 const certificates = [
   {
