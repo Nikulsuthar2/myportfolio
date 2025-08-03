@@ -6,6 +6,7 @@ import ProjectSection from "./components/ProjectSection";
 import AboutSection from "./components/AboutSection";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import ExperienceSection from "./components/ExperienceSection";
 
 const V3 = () => {
   return (
@@ -13,6 +14,7 @@ const V3 = () => {
       <Navbar />
       <HomeSection />
       <SkillSection />
+      <ExperienceSection/>
       <ProjectSection />
       <AboutSection />
       <ContactSection />

@@ -52,9 +52,9 @@ const Navbar = () => {
               </button>
 
               {isProfileOpen && (
-                <div className="absolute right-0 top-14 mt-2 w-64 rounded-xl overflow-hidden animate-slideOut">
-                  <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-[1px] rounded-xl">
-                    <div className="bg-[#0f1115] rounded-xl p-4">
+                <div className="absolute right-0 top-14 mt-2 w-64 rounded-2xl overflow-hidden animate-slideOut">
+                  <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-[3px] rounded-xl">
+                    <div className="bg-[#0f1115dd]  rounded-xl p-4">
                       <div className="flex items-center space-x-3 mb-4">
                         <img
                           src={nik}

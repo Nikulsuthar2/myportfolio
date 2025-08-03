@@ -4,12 +4,13 @@ import { AiFillApi } from "react-icons/ai";
 import { VscVscode } from "react-icons/vsc";
 import { TbBrandCSharp } from "react-icons/tb";
 import { FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
-import { Home, Code2, Rocket, User, MessageSquare } from "lucide-react";
+import { Home, Code2, Rocket, User, Briefcase, MessageCircle, Mail } from "lucide-react";
 import { FaFacebookF, FaJava, FaPython, FaXTwitter } from "react-icons/fa6";
 import { SiCplusplus, SiCss3, SiExpress, SiFlutter, SiGit, SiHtml5, SiJavascript, SiLeetcode, SiMongodb, SiNodedotjs, SiPhp, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 import jecrc from "@/assets/Education/jecrc.jpg";
 import nvpas from "@/assets/Education/nvpas.jpg";
+import accenture from "@/assets/Company/accentureLogo.jpg"
 
 import nikcalc1 from '@/assets/Projects/Calculator/thumb.png';
 import nikcalc2 from '@/assets/Projects/Calculator/img1.png';
@@ -131,9 +132,10 @@ import ebookstore22 from '@/assets/Projects/EBookStore/img21.png'
 const navLinks = [
   { name: "Home", icon: <Home size={16} />, href: "#home" },
   { name: "Skills", icon: <Code2 size={16} />, href: "#skills" },
+  { name: "Experience", icon: <Briefcase size={16} />, href: "#experience" },
   { name: "Projects", icon: <Rocket size={16} />, href: "#projects" },
   { name: "About", icon: <User size={16} />, href: "#about" },
-  { name: "Contact", icon: <MessageSquare size={16} />, href: "#contact" },
+  { name: "Contact", icon: <Mail size={16} />, href: "#contact" },
 ];
 
 const skills = {
@@ -485,7 +487,7 @@ const education = [
     university: "JECRC University",
     collage: "",
     period: "Aug 2023 - Present",
-    grade: "8.53 (Upto 2nd Sem)",
+    grade: "8.13",
     courses: ["Advanced Algorithms", "Machine Learning", "Distributed Systems"],
     logo: jecrc,
   },
@@ -500,4 +502,152 @@ const education = [
   }
 ];
 
-export { navLinks, skills, projects, socialLinks, education };
+const experience = [
+  {
+    logo: accenture,
+    company: "Accenture",
+    position: "Associate Software Engineer",
+    type: "Internship",
+    locationType: "Hybrid",
+    location: "Ahmedabad, India",
+    duration: "4 months",
+    period: "Feb 2025 - Jun 2025",
+    fullperiod: "21st Feb 2025 - 20th Jun 2025",
+    skills: ["SAP", "SAP ABAP"],
+    description: "Completed 4-month hybrid internship (2 month virtual, 2 month in-office at Ahmedabad) with structured training in SAP ABAP, Agile methodology, SDLC, and DevOps practices. ",
+    link: "https://www.accenture.com/in-en/careers",
+    color: "purple",
+  },
+]
+
+import accentureInternshipCertificate from "@/assets/Certificates/accenture_internship.png"
+import freecodecampCSharp from "@/assets/Certificates/freecodecampCSharp.png"
+import ibmHTML from "@/assets/Certificates/ibmHTML.jpg"
+import ibmJavascript from "@/assets/Certificates/ibmJavasrcipt.jpg"
+import ibmNodejs from "@/assets/Certificates/ibmNodejs.jpg"
+import ibmDevOpsFundamentals from "@/assets/Certificates/ibmDevOpsFundamentals.jpg"
+import courseraUX from "@/assets/Certificates/courseraUX.jpg"
+import courseraTechSupport from "@/assets/Certificates/courseraTechSupport.jpg"
+import courseraVersionControl from "@/assets/Certificates/courseraVersionControl.jpg"
+import courseraFrontend from "@/assets/Certificates/courseraFrontend.jpg"
+import courseraJavascript from "@/assets/Certificates/courseraJavascript.jpg"
+import courseraAI from "@/assets/Certificates/courseraAI.jpg"
+import courseraJDBC from "@/assets/Certificates/courseraJDBC.jpg"
+import courseraDataForML from "@/assets/Certificates/courseraDataForML.jpg"
+
+const certificates = [
+  {
+    id: null,
+    name:"Internship Completion Certificate",
+    organization:"Accenture",
+    image:accentureInternshipCertificate,
+    issueDate: "Jun 2025",
+    link: null,
+  },
+  {
+    id: "815825ed7753433cadcea35de3d3b3f0",
+    name:"DevOps Fundamentals",
+    organization:"IBM Skills Network",
+    image:ibmDevOpsFundamentals,
+    issueDate: "Dec 2024",
+    link: "https://courses.jecrc.skillsnetwork.site/certificates/815825ed7753433cadcea35de3d3b3f0",
+  },
+  {
+    id: null,
+    name:"Foundational C# with Microsoft",
+    organization:"FreeCodeCamp",
+    image:freecodecampCSharp,
+    issueDate: "Jan 2024",
+    link: "https://freecodecamp.org/certification/nikulsuthar/foundational-c-sharp-with-microsoft",
+  },
+  {
+    id: "41739f419d9e462a99da96c53786fcfa",
+    name:"NodeJS",
+    organization:"IBM Skills Network",
+    image:ibmNodejs,
+    issueDate: "Jan 2024",
+    link: "https://courses.jecrc.skillsnetwork.site/certificates/41739f419d9e462a99da96c53786fcfa",
+  },
+  {
+    id: "9379b0438f1c4e82b4310e1fa7caa36b",
+    name:"JavaScript",
+    organization:"IBM Skills Network",
+    image:ibmJavascript,
+    issueDate: "Jan 2024",
+    link: "https://courses.jecrc.skillsnetwork.site/certificates/9379b0438f1c4e82b4310e1fa7caa36b",
+  },
+  {
+    id: "1b60a3a2871545b38bf6f1528f0402b0",
+    name:"Web Development using to HTML",
+    organization:"IBM Skills Network",
+    image:ibmHTML,
+    issueDate: "Jan 2024",
+    link: "https://courses.jecrc.skillsnetwork.site/certificates/1b60a3a2871545b38bf6f1528f0402b0",
+  },
+  {
+    id: "K4P4KFGRSGM4",
+    name:"Exploratory Data Analysis for Machine Learning",
+    organization:"Coursera",
+    image:courseraDataForML,
+    issueDate: "Jan 2023",
+    link: "https://coursera.org/verify/K4P4KFGRSGM4",
+  },
+  {
+    id: "82TJR2NHLHU8",
+    name:"Introduction to Artificial Intelligence (AI)",
+    organization:"Coursera",
+    image:courseraAI,
+    issueDate: "Jan 2023",
+    link: "https://coursera.org/verify/82TJR2NHLHU8",
+  },
+  {
+    id: "W8ALPEY4JMW5",
+    name:"Version Control",
+    organization:"Coursera",
+    image:courseraVersionControl,
+    issueDate: "Jul 2022",
+    link: "https://coursera.org/verify/W8ALPEY4JMW5",
+  },
+  {
+    id: "GFLK2D83RJTA",
+    name:"Programming with JavaScript",
+    organization:"Coursera",
+    image:courseraJavascript,
+    issueDate: "Jul 2022",
+    link: "https://coursera.org/verify/GFLK2D83RJTA",
+  },
+  {
+    id: "WHPDYPMGY2K2",
+    name:" Introduction to Front-End Development",
+    organization:"Coursera",
+    image:courseraFrontend,
+    issueDate: "Jul 2022",
+    link: "https://coursera.org/verify/WHPDYPMGY2K2",
+  },
+  {
+    id: "9KMXQ2DW64AD",
+    name:"Foundations of User Experience (UX) Design",
+    organization:"Coursera",
+    image:courseraUX,
+    issueDate: "Jul 2022",
+    link: "https://coursera.org/verify/9KMXQ2DW64AD",
+  },
+  {
+    id: "CB5TSLJ55QK2",
+    name:"Technical Support Fundamentals",
+    organization:"Coursera",
+    image:courseraTechSupport,
+    issueDate: "Jul 2022",
+    link: "https://coursera.org/verify/CB5TSLJ55QK2",
+  },
+  {
+    id: "NLFH3TR9YHV4",
+    name:"Java Database Connectivity (JDBC) Introduction",
+    organization:"Coursera",
+    image:courseraJDBC,
+    issueDate: "Jul 2022",
+    link: "https://coursera.org/verify/NLFH3TR9YHV4",
+  },
+]
+
+export { navLinks, skills, projects, socialLinks, education, experience, certificates };

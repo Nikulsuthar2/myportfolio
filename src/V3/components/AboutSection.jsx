@@ -1,7 +1,8 @@
 import React from "react";
 import { education } from "../data";
-import { Building2, Calendar, ClipboardPen, GraduationCap } from "lucide-react";
+import { Building2, Calendar, ClipboardPen, ExternalLinkIcon, GraduationCap, ScrollText } from "lucide-react";
 import nik from "../../assets/MyPhoto/profile3.png";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
@@ -30,14 +31,18 @@ const AboutSection = () => {
                   Hey there! 👋, I'm Nikul!
                 </h3>
                 <p className="text-gray-300 mb-4">
-                  A passionate Software Developer who loves exploring and building innovative digital experiences.
-                  I primarily work with full-stack web development using React, TailwindCSS, and the MERN stack and
-                  enjoy experimenting with new technologies to expand my skill set.
+                  A passionate Software Developer who loves exploring and
+                  building innovative digital experiences. I primarily work with
+                  full-stack web development using React, TailwindCSS, and the
+                  MERN stack and enjoy experimenting with new technologies to
+                  expand my skill set.
                 </p>
                 <p className="text-gray-300">
-                  I enjoy solving real-world problems through code, whether it's developing web applications,
-                  designing UI components, or learning new things. Apart from coding, I love Video Games, digital art, and creative projects,
-                  which allows me to blend technology with creativity.
+                  I enjoy solving real-world problems through code, whether it's
+                  developing web applications, designing UI components, or
+                  learning new things. Apart from coding, I love Video Games,
+                  digital art, and creative projects, which allows me to blend
+                  technology with creativity.
                 </p>
               </div>
               <div className="project-card p-4 md:p-8 rounded-xl">
@@ -45,12 +50,18 @@ const AboutSection = () => {
                   🎯 Interests
                 </h3>
                 <p className="text-gray-300">
-                  💻 Technology & Development,
-                  🎨 Creativity & Art,
-                  🧠 Reading Books & Learning,
-                  🏋️‍♂️ Health & Fitness.
+                  💻 Technology & Development, 🎨 Creativity & Art, 🧠 Reading
+                  Books & Learning, 🏋️‍♂️ Health & Fitness.
                 </p>
               </div>
+              <Link
+                to="/certificate"
+                className={`flex justify-center gap-3 items-center px-6 py-3 rounded-xl bg-yellow-500 bg-opacity-10 text-yellow-400 hover:bg-opacity-20 transition-colors`}
+              >
+                <GraduationCap className="w-5 h-5" />
+                <span>View Certifications</span>
+                <ExternalLinkIcon className="w-4 h-4"/>
+              </Link>
             </div>
           </div>
 

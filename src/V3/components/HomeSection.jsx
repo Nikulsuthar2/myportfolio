@@ -6,9 +6,9 @@ const HomeSection = () => {
   return (
     <header
       id="home"
-      className="h-screen flex items-center justify-center relative overflow-hidden pt-16"
+      className="h-screen flex items-center justify-center relative overflow-visible pt-16"
     >
-      <div className="overflow-hidden absolute inset-0 opacity-50">
+      <div className="overflow-visible absolute inset-0 opacity-50">
         <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-purple-500 rounded-full opacity-20 blur-[100px] animate-pulse"></div>
         <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-blue-500 rounded-full opacity-20 blur-[150px] animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] bg-indigo-500 rounded-full opacity-20 blur-[100px] animate-pulse delay-2000"></div>
@@ -39,7 +39,7 @@ const HomeSection = () => {
           <h2 className="text-4xl md:text-3xl font-bold mb-4">
             Hi👋🏼, I'm
           </h2>
-          <h1 className="text-8xl md:text-8xl font-bold text-gradient mb-6">
+          <h1 className="text-8xl md:text-8xl font-bold text-yellow-400 mb-6">
             Nikul Suthar
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-8">
