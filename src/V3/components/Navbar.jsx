@@ -12,7 +12,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:flex justify-center ">
         <div className="bg-[rgba(15,17,21,0.5)] w-full backdrop-blur-lg border border-gray-800 rounded-2xl">
           <div className="flex items-center justify-between h-16 px-4 ">
-            <a href="#home" className="text-xl font-bold text-gradient">
+            <a href="#home" className=" md:hidden text-xl font-bold text-gradient">
+              NIKUL SUTHAR
+            </a>
+            <a href="#home" className="hidden md:block text-xl font-bold text-gradient">
               NS
             </a>
 

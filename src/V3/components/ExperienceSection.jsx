@@ -2,8 +2,10 @@ import React from "react";
 import { experience } from "../data";
 import { Github, ExternalLink, Youtube } from "lucide-react";
 import { Building2, Calendar, ClipboardPen, GraduationCap } from "lucide-react";
+import { calculateExperience } from "../../utils";
 
 const ExperienceSection = () => {
+  
   return (
     <section id="experience" className="py-20 relative overflow-visible">
         <div className="absolute inset-0 opacity-80">
@@ -62,9 +64,11 @@ const ExperienceSection = () => {
                     </div>
                     <div className="flex items-center gap-2 text-sm text-gray-400  mt-1">
                       <Calendar className="w-4 h-4" />
-                      <span title={exp.fullperiod}>{exp.period}</span>
+                      <span title={exp.fullPeriod}>{exp.period}</span>
                       <span> • </span>
-                      <span className="text-white font-normal">{exp.duration}</span>
+                      <span className="text-white font-normal">
+                        {calculateExperience(exp.startDate, exp.endDate)}
+                        </span>
                     </div>
                     <div className="text-xs text-gray-400  mt-2">
                         {exp.description}

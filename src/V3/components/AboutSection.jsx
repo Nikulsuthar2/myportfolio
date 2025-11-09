@@ -1,6 +1,13 @@
 import React from "react";
 import { education } from "../data";
-import { Building2, Calendar, ClipboardPen, ExternalLinkIcon, GraduationCap, ScrollText } from "lucide-react";
+import {
+  Building2,
+  Calendar,
+  ClipboardPen,
+  ExternalLinkIcon,
+  GraduationCap,
+  ScrollText,
+} from "lucide-react";
 import nik from "../../assets/MyPhoto/profile3.png";
 import { Link } from "react-router-dom";
 
@@ -26,7 +33,7 @@ const AboutSection = () => {
               className="h-full rounded-xl w-full object-cover"
             />
             <div className="space-y-4">
-              <div className="project-card p-4 md:p-8 rounded-xl">
+              <div className="project-card p-4 md:p-8 rounded-xl text-justify">
                 <h3 className="text-2xl font-bold text-blue-400 mb-4">
                   Hey there! 👋, I'm Nikul!
                 </h3>
@@ -45,7 +52,7 @@ const AboutSection = () => {
                   technology with creativity.
                 </p>
               </div>
-              <div className="project-card p-4 md:p-8 rounded-xl">
+              <div className="project-card p-4 md:p-8 rounded-xl text-justify">
                 <h3 className="text-2xl mb-4 font-semibold text-indigo-400">
                   🎯 Interests
                 </h3>
@@ -60,7 +67,7 @@ const AboutSection = () => {
               >
                 <GraduationCap className="w-5 h-5" />
                 <span>View Certifications</span>
-                <ExternalLinkIcon className="w-4 h-4"/>
+                <ExternalLinkIcon className="w-4 h-4" />
               </Link>
             </div>
           </div>
@@ -70,46 +77,49 @@ const AboutSection = () => {
               <span className="text-gradient">Education</span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {education.map((edu, index) => (
-                <div
-                  key={index}
-                  className="project-card p-2 md:p-6 rounded-xl space-y-4"
-                >
-                  <div className="flex items-start gap-4">
-                    {edu.logo ? (
-                      <img
-                        src={edu.logo}
-                        alt={edu.university}
-                        className="w-20 md:w-28 h-20 md:h-28 rounded-lg object-cover"
-                      />
-                    ) : (
-                      <div className="p-3 rounded-lg bg-blue-500 bg-opacity-10">
-                        <GraduationCap className="w-24 h-24 text-blue-400" />
-                      </div>
-                    )}
-                    <div className="flex-1">
-                      <h4 className="text-xl font-semibold text-blue-400">
-                        {edu.degree}
-                      </h4>
-                      <div className="flex items-center gap-2 text-gray-400  mt-1">
-                        <Building2 className="w-4 h-4" />
-                        <span>
-                          {edu.collage ? edu.collage + " | " : ""}
-                          {edu.university}
-                        </span>
-                      </div>
-                      <div className="flex items-center gap-2 text-gray-400  mt-1">
-                        <Calendar className="w-4 h-4" />
-                        <span>{edu.period}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-indigo-400  mt-1">
-                        <ClipboardPen className="w-4 h-4" />
-                        <span>CGPA: {edu.grade}</span>
+              {education
+                .slice()
+                .reverse()
+                .map((edu, index) => (
+                  <div
+                    key={index}
+                    className="project-card p-2 md:p-6 rounded-xl space-y-4"
+                  >
+                    <div className="flex items-start gap-4">
+                      {edu.logo ? (
+                        <img
+                          src={edu.logo}
+                          alt={edu.university}
+                          className="w-20 md:w-28 h-20 md:h-28 rounded-lg object-cover"
+                        />
+                      ) : (
+                        <div className="p-3 rounded-lg bg-blue-500 bg-opacity-10">
+                          <GraduationCap className="w-24 h-24 text-blue-400" />
+                        </div>
+                      )}
+                      <div className="flex-1">
+                        <h4 className="text-xl font-semibold text-blue-400">
+                          {edu.degree}
+                        </h4>
+                        <div className="flex items-center gap-2 text-gray-400  mt-1">
+                          <Building2 className="w-4 h-4" />
+                          <span>
+                            {edu.collage ? edu.collage + " | " : ""}
+                            {edu.university}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2 text-gray-400  mt-1">
+                          <Calendar className="w-4 h-4" />
+                          <span>{edu.period}</span>
+                        </div>
+                        <div className="flex items-center gap-2 text-indigo-400  mt-1">
+                          <ClipboardPen className="w-4 h-4" />
+                          <span>CGPA: {edu.grade}</span>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
         </div>

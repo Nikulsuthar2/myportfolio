@@ -14,7 +14,7 @@ const SkillSection = () => {
             <span
               key={skill.name}
               title={skill.name}
-              className="px-4 py-2 rounded-lg project-card text-purple-400 text-sm font-medium flex items-center gap-2"
+              className="px-4 py-2 rounded-xl project-card text-purple-400 text-sm font-medium flex items-center gap-3"
               style={{
                 backgroundColor: `${skill.color}15`,
                 color: skill.color,
@@ -29,7 +29,7 @@ const SkillSection = () => {
             <span
               key={skill.name}
               title={skill.name}
-              className="px-4 py-2 rounded-lg project-card text-blue-400 text-sm font-medium flex items-center gap-2 "
+              className="px-4 py-2 rounded-xl project-card text-blue-400 text-sm font-medium flex items-center gap-3 "
               style={{
                 backgroundColor: `${skill.color}15`,
                 color: skill.color,
@@ -44,7 +44,7 @@ const SkillSection = () => {
             <span
               key={skill.name}
               title={skill.name}
-              className="px-4 py-2 rounded-lg project-card text-indigo-400 text-sm font-medium flex items-center gap-2 "
+              className="px-4 py-2 rounded-xl project-card text-indigo-400 text-sm font-medium flex items-center gap-3 "
               style={{
                 backgroundColor: `${skill.color}15`,
                 color: skill.color,
@@ -59,7 +59,7 @@ const SkillSection = () => {
             <span
               key={skill.name}
               title={skill.name}
-              className="px-4 py-2 rounded-lg project-card text-green-400 text-sm font-medium flex items-center gap-2 "
+              className="px-4 py-2 rounded-xl project-card text-green-400 text-sm font-medium flex items-center gap-3 "
               style={{
                 backgroundColor: `${skill.color}15`,
                 color: skill.color,
