@@ -9,4 +9,5 @@
     font-family: Poppins,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
