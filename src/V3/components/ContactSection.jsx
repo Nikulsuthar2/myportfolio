@@ -22,19 +22,19 @@ const ContactSection = () => {
               you!
             </p>
           </div>
-          <div className="project-card p-4 md:p-8 rounded-xl text-purple-400  text-center">
+          <div className="project-card p-4 md:p-8 rounded-xl text-white  text-center">
             <h3 className="text-2xl font-semibold mb-6">Social Links</h3>
             <div className="flex flex-wrap justify-center gap-4 overflow-visible">
               <a
                 key={"Mail"}
-                href="mailto:nikulsuthar973@gmail.com"
+                href="mailto:nikulsuthar.dev@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 card-gradient flex items-center gap-4 text-indigo-400 rounded-xl hover:scale-105 transition-transform"
+                className="p-3 card-gradient flex items-center gap-4 rounded-xl hover:scale-105 transition-transform"
                 title={"Mail"}
               >
-                <Mail size={20} />
-                nikulsuthar973@gmail.com
+                <Mail size={20}  className="text-red-400"/>
+                nikulsuthar.dev@gmail.com
               </a>
               {socialLinks.map((link) => (
                 <a
@@ -46,7 +46,7 @@ const ContactSection = () => {
                   title={link.name}
                 >
                   {React.cloneElement(link.icon, {
-                    className: "text-purple-400",
+                    className: link.color,
                   })}
                   {link.username}
                 </a>

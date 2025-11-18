@@ -39,14 +39,14 @@ const HomeSection = () => {
           <h2 className="text-4xl md:text-3xl font-bold mb-4">
             Hi👋🏼, I'm
           </h2>
-          <h1 className="text-8xl md:text-8xl font-bold text-yellow-400 mb-6">
+          <h1 className="text-8xl md:text-8xl font-bold text-blue-400 mb-6">
             Nikul Suthar
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-8">
-            ✨ Full Stack Developer crafting exceptional digital experiences
+            ✨ Full-Stack Developer turning ideas into modern, scalable applications 🔥
           </p>
           <div className="flex flex-wrap overflow-visible justify-center gap-4">
-            {socialLinks.map((link) => (
+            {socialLinks.slice(0, 6).map((link) => (
               <a
                 key={link.name}
                 href={link.url}
