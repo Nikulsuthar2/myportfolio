@@ -7,7 +7,7 @@ const Certifications = () => {
   const [isImageOpened, setIsImageOpened] = useState(false);
   const [imageOpened, setImageOpened] = useState(null);
   return (
-    <div className="relative h-screen bg-[#0a0b0e] text-gray-100 overflow-hidden">
+    <div className="relative w-full h-screen bg-[#0a0b0e] text-gray-100 overflow-hidden">
       {isImageOpened && (
         <div className="absolute z-50 h-screen w-screen flex justify-center items-center bg-[#000000b0] p-8" >
           <div className="rounded-xl border border-[1px] border-[#cacaca] bg-[#000000b0] h-fit md:h-full backdrop-blur-lg overflow-hidden">
@@ -21,19 +21,19 @@ const Certifications = () => {
           </div>
         </div>
       )}
-      <div className="h-full container mx-auto px-4 overflow-y-auto">
-        <div className="sticky top-0  pt-6 pb-4 bg-[#0a0b0ecc] backdrop-blur-2xl z-10 border-b border-[#ffffff0d] flex flex-col md:flex-row items-center gap-8">
+      <div className="h-full w-full overflow-y-auto">
+        <div className="sticky top-0  pt-6 pb-6 bg-[#0a0b0ecc] backdrop-blur-2xl z-10 border-b border-[#ffffff0d] flex flex-row px-4 md:px-16 items-center gap-8">
           <Link
             onClick={(e) => history.back()}
             className="inline-flex items-center text-blue-400 hover:text-blue-300"
           >
-            <ArrowLeft size={20} className="mr-2" /> Back
+            <ArrowLeft size={20} className="mr-2" /> <span className="hidden md:block">Back</span>
           </Link>
           <h1 className={`text-2xl font-bold text-yellow-400 text-center`}>
             Certifications
           </h1>
         </div>
-        <div className="pt-4 md:pt-8 pb-8">
+        <div className="pt-4 container md:pt-8 mx-auto px-4 pb-8">
           <div className="space-y-4 overflow-scroll">
             {/* Screenshots */}
             <div className="project-card p-2 md:p-4 rounded-xl">

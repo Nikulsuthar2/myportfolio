@@ -6,12 +6,12 @@ import { Link } from "react-router-dom";
 const ProjectSection = () => {
   return (
     <section id="projects" className="py-20">
-      <div className="container mx-auto px-4 overflow-visible">
+      <div className="container mx-auto overflow-visible">
         <h2 className="text-3xl md:text-4xl font-bold text-center mt-4 md:mt-2 overflow-visible mb-12 md:mb-16">
           <span className="text-gray-100 dark:text-gray-900">🚀</span>
           <span className="text-gradient ml-2">Featured Projects</span>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-visible">
+        <div className="grid px-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 overflow-visible">
           {projects
             .slice()
             .reverse()

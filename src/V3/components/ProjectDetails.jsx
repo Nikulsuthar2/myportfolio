@@ -25,8 +25,8 @@ const ProjectDetails = () => {
 
   return (
     <div className="h-screen bg-[#0a0b0e] text-gray-100 overflow-hidden">
-      <div className="h-full container mx-auto px-4 overflow-y-auto">
-        <div className="sticky top-0  pt-6 pb-4 bg-[#0a0b0ecc] backdrop-blur-2xl z-10 border-b border-[#ffffff0d] flex flex-col md:flex-row items-center gap-8">
+      <div className="h-full  overflow-y-auto">
+        <div className="sticky top-0  pt-6 pb-4 bg-[#0a0b0ecc] backdrop-blur-2xl z-10 border-b border-[#ffffff0d] flex flex-col px-4 md:px-16 md:flex-row items-center gap-8">
           <Link
             // to="/#projects"
             onClick={(e)=> history.back()}
@@ -38,7 +38,7 @@ const ProjectDetails = () => {
             {project.title}
           </h1>
         </div>
-        <div className="max-w-8xl mt-2 mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-4">
+        <div className="container px-4 max-w-8xl mt-2 mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-4">
           <div className="flex flex-col gap-4 ">
             <img
               src={project.image}
@@ -108,7 +108,7 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
-        <div className="pt-4 md:pt-8 pb-8">
+        <div className="container px-4 mx-auto pt-4 md:pt-8 pb-8">
           <div className="space-y-4 overflow-scroll">
             {/* Project Description */}
             <div className="project-card p-4 md:p-6 rounded-xl">
