@@ -207,14 +207,14 @@ const Projects = () => {
                           {selectedProject.screenshots.length > 1 && (
                             <>
                               <button
-                                onClick={prevSlide}
+                                onClick={() => prevScreenshot(selectedProject.screenshots.length)}
                                 className="absolute left-6 p-3 rounded-full bg-black/30 text-white backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all hover:bg-black/50 hover:scale-105 active:scale-95"
                                 aria-label="Previous slide"
                               >
                                 <ArrowLeft size={20} />
                               </button>
                               <button
-                                onClick={nextSlide}
+                                onClick={() => nextScreenshot(selectedProject.screenshots.length)}
                                 className="absolute right-6 p-3 rounded-full bg-black/30 text-white backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all hover:bg-black/50 hover:scale-105 active:scale-95"
                                 aria-label="Next slide"
                               >
