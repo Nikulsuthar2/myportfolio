@@ -215,7 +215,7 @@ import courseraJavascript from "@/assets/Certificates/courseraJavascript.jpg";
 import courseraAI from "@/assets/Certificates/courseraAI.jpg";
 import courseraJDBC from "@/assets/Certificates/courseraJDBC.jpg";
 import courseraDataForML from "@/assets/Certificates/courseraDataForML.jpg";
-import antigravityLogo from "@/assets/antigravity.svg";
+import antigravityLogo from "@/assets/Antigravity.svg";
 
 // Navigation Links for V4
 export const navLinks = [
