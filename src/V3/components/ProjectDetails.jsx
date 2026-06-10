@@ -13,7 +13,7 @@ const ProjectDetails = () => {
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Project not found</h2>
           <Link
-            to="/"
+            to="/v3"
             className="text-blue-400 hover:text-blue-300 flex items-center gap-2"
           >
             <ArrowLeft size={20} /> Back to Home

@@ -62,7 +62,7 @@ const AboutSection = () => {
                 </p>
               </div>
               <Link
-                to="/certificate"
+                to="/v3/certificate"
                 className={`flex justify-center gap-3 items-center px-6 py-3 rounded-xl bg-yellow-500 bg-opacity-10 text-yellow-400 hover:bg-opacity-20 transition-colors active:translate-y-1`}
               >
                 <GraduationCap className="w-5 h-5" />

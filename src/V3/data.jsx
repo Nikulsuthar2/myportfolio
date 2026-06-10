@@ -596,7 +596,7 @@ const socialLinks = [
   {
     name: "Buy Me a Coffee",
     icon: <SiBuymeacoffee size={24} />,
-    url: "https://www.buymeacoffee.com/nikul",
+    url: "buymeacoffee.com/nikul",
     username: "Buy Me a Coffee",
     color: "text-yellow-500",
   },

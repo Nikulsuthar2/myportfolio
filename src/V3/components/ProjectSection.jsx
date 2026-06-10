@@ -20,7 +20,7 @@ const ProjectSection = () => {
                 key={project.id}
                 className="project-card rounded-xl overflow-hidden hover:scale-[1.02] transition-transform"
               >
-                <Link to={`/projects/${project.id}`}>
+                <Link to={`/v3/projects/${project.id}`}>
                   <img
                     src={project.image}
                     alt={project.title}
@@ -28,7 +28,7 @@ const ProjectSection = () => {
                   />
                 </Link>
                 <div className="p-6 flex flex-col justify-between">
-                  <Link to={`/projects/${project.id}`}
+                  <Link to={`/v3/projects/${project.id}`}
                     className={`text-xl font-semibold mb-2 text-${project.color}-400`}
                   >
                     {project.title}
