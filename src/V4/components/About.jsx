@@ -3,7 +3,7 @@ import { createPortal } from "react-dom";
 import { education, certificates } from "../data/v4Data";
 import { GraduationCap, Building, Calendar, BookOpen, ChevronRight, Award, X, ExternalLink, Heart, Compass } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import myPhoto from "@/assets/MyPhoto/profile3.png";
+import myPhoto from "@/assets/MyPhoto/profile4.png";
 
 const About = () => {
   const [isCertModalOpen, setIsCertModalOpen] = useState(false);
